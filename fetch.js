@@ -1,3 +1,3 @@
-fetch('http://asutosh-weather-app.heroku.com/weather?address=puri').then((response)=>{
+fetch('http://asutosh-weather-app.herokuapp.com/weather?address=puri').then((response)=>{
     console.log(response)
 })
