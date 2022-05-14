@@ -273,6 +273,22 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+        <script>
+fetch('https://asutosh-weather-app.herokuapp.com/weather?address=puri').then((response) => {
+    response.json().then((data) => {
+        if (data.error) {
+            console.log(data.error)
+        } else {
+            console.log(data.location)
+            console.log(data.forecast)
+        }
+    })
+})
+
+
+console.log("i love ");
+        
+        </script>
 </body>
 
 </html>
